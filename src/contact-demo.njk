@@ -1,0 +1,385 @@
+---
+layout: false
+title: Contact Sales Demo - EverWash
+permalink: /contact-demo/
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'none'; form-action 'none'; script-src 'unsafe-inline'">
+  <title>{{ title }}</title>
+  <link rel="icon" href="/img/favicon/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  {% include "header.njk" %}
+
+  <main>
+<section class="contact-hero">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <h1 class="hero-title">Ready to <span style="color: #f3f183;">Grow?</span></h1>
+        <p class="hero-text">Connect with our sales team to learn how EverWash can transform your car wash business.</p>
+      </div>
+    </div>
+  </div>
+  <div class="curve">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path fill="#f8f8ff" d="M0,0 C720,40 720,40 1440,0 L1440,80 L0,80 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="contact-card">
+          <div class="row g-0">
+            <div class="col-md-5 contact-info-sidebar">
+              <h2 class="sidebar-title">GET IN TOUCH<br>WITH SALES</h2>
+              <p>Fill out the form or contact us directly and our team will get back to you within 24 hours.</p>
+
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span><a href="mailto:sales@everwash.com" class="text-white">sales@everwash.com</a></span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <span><a href="tel:+18554927477" class="text-white">(855) 492-7477</a></span>
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <div class="contact-form">
+                <div class="text-center mb-4">
+                  <img src="/assets/images/everwash-logo-horizontal.png" alt="EverWash" class="form-logo mb-3">
+                  <p class="form-subtext">Talk to a membership professional about how the EverWash platform can increase
+                    the overall profitability of your wash</p>
+                </div>
+                <div id="demo-form-container">
+                  <p class="small text-muted">This is a demo. Your information will not be sent.</p>
+                  <p id="demo-progress" class="small text-muted" aria-live="polite">Step 1 of 2</p>
+                  <noscript><p>Enable JavaScript to try this form.</p></noscript>
+                  <form id="contact-demo-form" aria-describedby="demo-progress" novalidate>
+                    <fieldset id="demo-step-1" disabled>
+                      <legend class="visually-hidden">Contact details</legend>
+                      <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label" for="demo-firstName">First Name</label>
+                        <input type="text" class="form-control" id="demo-firstName" name="firstName" autocomplete="given-name" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label" for="demo-lastName">Last Name</label>
+                        <input type="text" class="form-control" id="demo-lastName" name="lastName" autocomplete="family-name" required>
+                      </div>
+                      <div class="col-md-12">
+                        <label class="form-label" for="demo-phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="demo-phone" name="phone" autocomplete="tel" required>
+                      </div>
+                      <div class="col-md-12">
+                        <label class="form-label" for="demo-email">Email Address</label>
+                        <input type="email" class="form-control" id="demo-email" name="email" autocomplete="email" required>
+                      </div>
+                        <div class="col-12 mt-4">
+                          <button type="button" id="demo-next" class="btn btn-primary btn-lg w-100">Next</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset id="demo-step-2" hidden disabled>
+                      <legend class="visually-hidden">Car wash details</legend>
+                      <div class="row g-3">
+                      <div class="col-md-12">
+                        <label class="form-label" for="demo-carWashName">Car Wash Name</label>
+                        <input type="text" class="form-control" id="demo-carWashName" name="carWashName" autocomplete="organization" required>
+                      </div>
+                      <div class="col-md-12">
+                        <label class="form-label" for="demo-washType">Wash Type</label>
+                        <select class="form-select" id="demo-washType" name="washType" required>
+                          <option value="" selected disabled>Choose Wash Type</option>
+                          <option value="tunnel">Tunnel</option>
+                          <option value="iba">IBA</option>
+                          <option value="self-serve">Self Serve</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                      <div class="col-md-8">
+                        <label class="form-label" for="demo-state">State</label>
+                        <select class="form-select" id="demo-state" name="state" autocomplete="address-level1" required>
+                          <option value="" selected disabled>Choose State</option>
+                          <option value="Alabama">Alabama</option>
+                          <option value="Alaska">Alaska</option>
+                          <option value="Arizona">Arizona</option>
+                          <option value="Arkansas">Arkansas</option>
+                          <option value="California">California</option>
+                          <option value="Colorado">Colorado</option>
+                          <option value="Connecticut">Connecticut</option>
+                          <option value="Delaware">Delaware</option>
+                          <option value="Florida">Florida</option>
+                          <option value="Georgia">Georgia</option>
+                          <option value="Hawaii">Hawaii</option>
+                          <option value="Idaho">Idaho</option>
+                          <option value="Illinois">Illinois</option>
+                          <option value="Indiana">Indiana</option>
+                          <option value="Iowa">Iowa</option>
+                          <option value="Kansas">Kansas</option>
+                          <option value="Kentucky">Kentucky</option>
+                          <option value="Louisiana">Louisiana</option>
+                          <option value="Maine">Maine</option>
+                          <option value="Maryland">Maryland</option>
+                          <option value="Massachusetts">Massachusetts</option>
+                          <option value="Michigan">Michigan</option>
+                          <option value="Minnesota">Minnesota</option>
+                          <option value="Mississippi">Mississippi</option>
+                          <option value="Missouri">Missouri</option>
+                          <option value="Montana">Montana</option>
+                          <option value="Nebraska">Nebraska</option>
+                          <option value="Nevada">Nevada</option>
+                          <option value="New Hampshire">New Hampshire</option>
+                          <option value="New Jersey">New Jersey</option>
+                          <option value="New Mexico">New Mexico</option>
+                          <option value="New York">New York</option>
+                          <option value="North Carolina">North Carolina</option>
+                          <option value="North Dakota">North Dakota</option>
+                          <option value="Ohio">Ohio</option>
+                          <option value="Oklahoma">Oklahoma</option>
+                          <option value="Oregon">Oregon</option>
+                          <option value="Pennsylvania">Pennsylvania</option>
+                          <option value="Rhode Island">Rhode Island</option>
+                          <option value="South Carolina">South Carolina</option>
+                          <option value="South Dakota">South Dakota</option>
+                          <option value="Tennessee">Tennessee</option>
+                          <option value="Texas">Texas</option>
+                          <option value="Utah">Utah</option>
+                          <option value="Vermont">Vermont</option>
+                          <option value="Virginia">Virginia</option>
+                          <option value="Washington">Washington</option>
+                          <option value="West Virginia">West Virginia</option>
+                          <option value="Wisconsin">Wisconsin</option>
+                          <option value="Wyoming">Wyoming</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4">
+                        <label class="form-label" for="demo-zipCode">Zip Code</label>
+                        <input type="text" class="form-control" id="demo-zipCode" name="zipCode" autocomplete="postal-code" required>
+                      </div>
+                        <div class="col-12 mt-4 d-flex gap-3">
+                          <button type="button" id="demo-back" class="btn btn-outline-secondary btn-lg">Back</button>
+                          <button type="submit" class="btn btn-primary btn-lg flex-grow-1">Submit</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                  <p id="demo-success" class="alert alert-success" role="status" tabindex="-1" hidden>Demo submission successful</p>
+                  <p class="mt-4 text-muted" style="font-size: 14px; line-height: 1.5;">* This form is specifically
+                        for Car Wash Owners who wish to contact EverWash about setting up a membership program at their
+                        location. If you are a current EverWash member looking for customer support, please contact our
+                        Member Support Team at <a href="mailto:support@everwash.com">support@everwash.com</a> or call <a
+                          href="tel:+12156188808">215-618-8808</a> to speak with an agent.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  {% include "footer.njk" %}
+
+  <style>
+  .contact-hero {
+    position: relative;
+    background: url('/assets/images/contact-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    padding: 12rem 0 6rem;
+    text-align: center;
+  }
+
+  .contact-hero .hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .contact-hero .hero-text {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-hero .curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+  }
+
+  .contact-hero .curve svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+  }
+
+  .contact-section {
+    padding: 60px 0 100px;
+    background: #f8f8ff;
+  }
+
+  .contact-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-info-sidebar {
+    background: var(--color-primary);
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sidebar-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .form-logo {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .form-subtext {
+    font-size: 16px;
+    color: var(--color-primary);
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    padding: 16px 20px;
+    text-align: left;
+  }
+
+  .form-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0;
+  }
+
+  .form-control,
+  .form-select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 0.2rem rgba(253, 196, 45, 0.25);
+  }
+
+  @media (max-width: 768px) {
+    .contact-hero {
+      padding: 10rem 0 4rem;
+    }
+
+    .contact-hero .hero-title {
+      font-size: 36px;
+    }
+
+    .contact-info-sidebar {
+      padding: 30px;
+    }
+  }
+
+    #contact-demo-form fieldset {
+      min-width: 0;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+  </style>
+
+  <script>
+    const form = document.getElementById('contact-demo-form');
+    const stepOne = document.getElementById('demo-step-1');
+    const stepTwo = document.getElementById('demo-step-2');
+    const progress = document.getElementById('demo-progress');
+    const success = document.getElementById('demo-success');
+    const next = document.getElementById('demo-next');
+
+    function showStepTwo(visible) {
+      stepOne.hidden = stepOne.disabled = visible;
+      stepTwo.hidden = stepTwo.disabled = !visible;
+      progress.textContent = visible ? 'Step 2 of 2' : 'Step 1 of 2';
+      (visible ? stepTwo : stepOne).querySelector('input').focus();
+    }
+
+    next.addEventListener('click', function() {
+      if (form.reportValidity()) showStepTwo(true);
+    });
+
+    document.getElementById('demo-back').addEventListener('click', function() {
+      showStepTwo(false);
+    });
+
+    stepOne.addEventListener('keydown', function(event) {
+      if (event.key === 'Enter' && event.target.matches('input') && !event.isComposing) {
+        event.preventDefault();
+        next.click();
+      }
+    });
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      if (!stepOne.hidden) {
+        showStepTwo(true);
+        return;
+      }
+      form.hidden = true;
+      progress.hidden = true;
+      success.hidden = false;
+      success.focus();
+    });
+
+    stepOne.disabled = false;
+
+    const menuToggle = document.querySelector('.navbar-toggler');
+    const menu = document.getElementById('navbarNav');
+    menuToggle.addEventListener('click', function() {
+      const open = menu.classList.toggle('show');
+      menuToggle.setAttribute('aria-expanded', String(open));
+    });
+  </script>
+</body>
+</html>
